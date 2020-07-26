@@ -4,7 +4,6 @@ import 'package:flutter/material.dart';
 import 'details_screen.dart';
 import 'main.dart';
 import 'maincoursedetails.dart';
-
 class Resources extends StatelessWidget {
   final _controller = TextEditingController();
   @override
@@ -161,7 +160,6 @@ class Resources extends StatelessWidget {
             Container(
               height: 210,
               child: ListView.builder(
-
                 scrollDirection: Axis.horizontal,
                 itemCount: 3,
                 shrinkWrap: true,
@@ -222,52 +220,51 @@ class CourseCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return GestureDetector(
+    return  GestureDetector(
         onTap: () {
           Navigator.push(
               context,
               MaterialPageRoute(
                   builder: (BuildContext context) => HomeScreen()));
         },
-        child:Padding(
-          padding: EdgeInsets.all(16.0),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: <Widget>[
-              Container(
-
-                height: 140.0,
-                width: 250.0,
-                decoration: BoxDecoration(
-                    image: DecorationImage(
-                        image: AssetImage(imagePath), fit: BoxFit.cover),
-                    borderRadius: BorderRadius.circular(24),
-                    boxShadow: <BoxShadow>[
-                      BoxShadow(
-                          color: Colors.grey,
-                          blurRadius: 15.0,
-                          offset: Offset(0.75, 0.95))
-                    ],
-                    color: Colors.grey),
-              ),
-              SizedBox(
-                height: 16,
-              ),
-              Padding(
-                padding: const EdgeInsets.only(left: 4.0),
-                child: Text(
-                  '$title',
-                  style: TextStyle(
-                      color: Colors.black,
-                      fontWeight: FontWeight.bold,
-                      letterSpacing: 1.9,
-                      fontSize: 16.0),
-                ),
-              ),
-            ],
+        child: Padding(
+      padding: EdgeInsets.all(16.0),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        children: <Widget>[
+          Container(
+            height: 140.0,
+            width: 250.0,
+            decoration: BoxDecoration(
+                image: DecorationImage(
+                    image: AssetImage(imagePath), fit: BoxFit.cover),
+                borderRadius: BorderRadius.circular(24),
+                boxShadow: <BoxShadow>[
+                  BoxShadow(
+                      color: Colors.grey,
+                      blurRadius: 15.0,
+                      offset: Offset(0.75, 0.95))
+                ],
+                color: Colors.grey),
           ),
-        ),
-    );
+          SizedBox(
+            height: 16,
+          ),
+          Padding(
+            padding: const EdgeInsets.only(left: 4.0),
+            child: Text(
+              '$title',
+              style: TextStyle(
+                  color: Colors.black,
+                  fontWeight: FontWeight.bold,
+                  letterSpacing: 1.9,
+                  fontSize: 16.0),
+            ),
+          ),
+        ],
+      ),
+    )
+    ,);
   }
 }

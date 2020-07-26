@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1006927217111",
+    "firebase_url": "https://vikastut.firebaseio.com",
+    "project_id": "vikastut",
+    "storage_bucket": "vikastut.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1006927217111:android:495596c7902fc0aa28cb92",
+        "android_client_info": {
+          "package_name": "com.example.edu_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1006927217111-oi3l8stlqhguuka8r6pkphmu66ps03et.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCBwPoi33f7ZFQslmCv89KLheq0F_mc6-U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1006927217111-oi3l8stlqhguuka8r6pkphmu66ps03et.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
